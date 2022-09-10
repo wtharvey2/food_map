@@ -276,10 +276,10 @@ var SearchableMapLib = {
 
     // -----rating filter-----
     var rating_filter = $("#rating-filter").val();
-    if (rating_filter == "Top Rated") {
+    if (rating_filter == "Above Average") {
       SearchableMapLib.currentResults.features = $.grep(SearchableMapLib.currentResults.features, function(r) {
           return (r.properties["Rating"] == 10 || r.properties["Rating"] == 9 ||
-            r.properties["Rating"] == 8 || r.properties["Rating"] == 7);
+            r.properties["Rating"] == 8 || r.properties["Rating"] == 7 || r.properties["Rating"] == 6);
         });
     } else if (rating_filter == "Somewhere New") {
       SearchableMapLib.currentResults.features = $.grep(SearchableMapLib.currentResults.features, function(r) {
