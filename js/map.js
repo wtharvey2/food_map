@@ -31,7 +31,6 @@ $(function() {
     debug: false,
   });
 
-  var autocomplete = new google.maps.places.Autocomplete(document.getElementById('search-address'));
   var modalURL;
 
   $('#btnSearch').click(function(){
